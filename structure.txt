@@ -1,0 +1,15 @@
+- It is python flask frontend. The structure goes thus
+
+home directory
+|
+|- static (directory)
+|   |- image (it contains all the image files)
+|   |- css (it contains all the css files)
+|   |- js (it contains all the JavaScript files)
+|
+|- templates (directory)
+|   |-index.html
+|
+|- app.py
+|
+|- tailwindcss configuration files

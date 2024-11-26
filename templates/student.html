@@ -1,0 +1,14 @@
+{% extends "home.html" %}
+
+{% block content %}
+<div class=" flex justify-center gap-2 m-3">
+    {% for myStudent in myStudents %}
+    <div class=" border border-solid border-black p-3 rounded-lg">
+        <p>This information is for student with ID: {{myStudent['id']}} </p>
+        <p>FULL NAME: {{myStudent['first name']}} {{myStudent['last name']}}</p>
+        <p>AGE: {{myStudent['age']}} </p>
+        <p>GENDER: {{myStudent['gender']}} </p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

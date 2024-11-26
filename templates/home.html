@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/output.css">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <div class=" flex justify-center items-center h-screen">
+        <div>
+            <form method="post">
+                <p class=" mt-2">First Name</p>
+                <input class=" rounded-xl border-solid border border-black pl-2" type="text" name="first name", id="first name" required>
+                <p class=" mt-2">Last Name</p>
+                <input class=" rounded-xl border-solid border border-black pl-2" type="text" name="last name", id="last name" required>
+                <p class=" mt-2">Age</p>
+                <input class=" rounded-xl border-solid border border-black pl-2" type="text", name="age", id="age" required>
+                <p class=" mt-2">gender</p>
+                <input class=" rounded-xl border-solid border border-black pl-2" type="text" name="gender" id="gender" required>
+
+                <div class=" mt-4 flex justify-center">
+                    <button type="submit" class=" p-2 rounded-lg bg-gray-600">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>
